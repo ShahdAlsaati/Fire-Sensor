@@ -1,0 +1,30 @@
+POST http://localhost:2500/mobile-app/create/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTU3NTcxODIsImlhdCI6MTcxNTc1NjU4Miwic3ViIjoibW9iaWxlQWNjZXNzIiwidXNlcklkIjoxLCJ1c2VybmFtZSI6ImdnIiwibGV2ZWwiOiJ1c2VyTGV2ZWwifQ.D_EcQNhBlrTcgaY7qnp6cNs1pPUYpTX4Bd00MrTrSSo
+
+{
+  "postBody": "please listen to me",
+  "feelingId": 1,
+  "disk": {
+    "center": {
+      "latitude": 22.22,
+      "longitude": 22.22
+    },
+    "radius": 22.222
+  },
+  "postLocation": {
+    "coordinates": {
+      "longitude": 22.22,
+      "latitude": 22.22
+    }
+  }
+}
+### create comment
+POST http://localhost:2500/mobile-app/create/comment
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTU3NTgzMTAsImlhdCI6MTcxNTc1NzcxMCwic3ViIjoibW9iaWxlQWNjZXNzIiwidXNlcklkIjowLCJ1c2VybmFtZSI6ImdnZyIsImxldmVsIjoidXNlckxldmVsIn0.6Cf9413MqZmeuEY1Q7hhJFQwODMnsoVmq6mqLDkUQ6Y
+
+{
+  "commentBody": "welcome my friend",
+  "postId": 0
+}

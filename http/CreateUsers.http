@@ -1,0 +1,82 @@
+POST http://localhost:2500/mobile-app/sign-up
+Content-Type: application/json
+
+{
+  "username": "gg",
+  "password": "1234567890",
+  "email": "gggg@gmail.com",
+  "performLoginOnSuccessfulRegister": true,
+  "coordinates": {
+    "latitude": 22.22,
+    "longitude": 22.22
+  }
+}
+
+### check username
+GET http://localhost:2500/mobile-app/sign-up/check-username?username=g
+Content-Type: application/json
+
+### login
+POST http://localhost:2500/mobile-app/login
+Content-Type: application/json
+
+{
+  "username" : "george",
+  "password" : "georgeis12345"
+}
+
+### login guest
+POST http://localhost:2500/mobile-app/login/guest
+Content-Type: application/json
+
+### refresh token
+POST http://localhost:2500/mobile-app/refresh-token
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTYzMTM4MTgsImlhdCI6MTcxNTcwOTAxOCwic3ViIjoibW9iaWxlUmVmcmVzaCIsInVzZXJJZCI6MzAsInVzZXJuYW1lIjoiZ2ciLCJsZXZlbCI6InVzZXJMZXZlbCIsImp0aSI6IjQ2OWMwYWM0LWFjMmEtNDBkZi1iNDcyLTg3NzA3NDhmZDQ5OCJ9.na3WKG2141zetHZdEBvMqDubPPSAif-NLq8WnRieNrc
+
+### create user with real email
+POST http://localhost:2500/mobile-app/sign-up
+Content-Type: application/json
+
+{
+  "username": "george",
+  "password": "1234567890",
+  "email": "georgehaddad.245@gmail.com",
+  "performLoginOnSuccessfulRegister": true,
+  "coordinates": {
+    "latitude": 22.22,
+    "longitude": 22.22
+  }
+}
+
+### verify the email
+POST http://localhost:2500/mobile-app/verify-email
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTU3NjQ1MDQsImlhdCI6MTcxNTc1ODUwNCwic3ViIjoibW9iaWxlQWNjZXNzIiwidXNlcklkIjoyLCJ1c2VybmFtZSI6Imdlb3JnZSIsImxldmVsIjoidXNlckxldmVsIn0.anPtwf2a1UJCnOoXZhUWh359597-qTNsSzxOFXoBFpY
+
+### send vcode
+POST http://localhost:2500/mobile-app/send-email-vcode
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTU3NjQ1MDQsImlhdCI6MTcxNTc1ODUwNCwic3ViIjoibW9iaWxlQWNjZXNzIiwidXNlcklkIjoyLCJ1c2VybmFtZSI6Imdlb3JnZSIsImxldmVsIjoidXNlckxldmVsIn0.anPtwf2a1UJCnOoXZhUWh359597-qTNsSzxOFXoBFpY
+
+{
+  "vcode": "084829"
+}
+
+### forgot the password ?
+POST http://localhost:2500/mobile-app/forgot-password
+Content-Type: application/json
+
+{
+  "username": "george"
+}
+
+### reset it
+POST http://localhost:2500/mobile-app/reset-password
+Content-Type: application/json
+
+{
+  "vcode": "506162",
+  "password": "georgeis12345",
+  "username": "george"
+}

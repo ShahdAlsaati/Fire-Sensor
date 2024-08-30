@@ -1,0 +1,3 @@
+GET http://localhost:2500/mobile-app/read/1/profile?extra=true
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTYzNjY0NDQsImlhdCI6MTcxNTc2MTY0NCwic3ViIjoibW9iaWxlQWNjZXNzIiwibGV2ZWwiOiJndWVzdExldmVsIn0.-7T_oWTZsNKxZHw04mvufxlkr-TnV9iRBseyRdLUqQg

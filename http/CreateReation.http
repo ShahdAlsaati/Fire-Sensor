@@ -1,0 +1,20 @@
+POST http://localhost:2500/mobile-app/create/reaction
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTU3NjgzODgsImlhdCI6MTcxNTc2MjM4OCwic3ViIjoibW9iaWxlQWNjZXNzIiwidXNlcklkIjoyLCJ1c2VybmFtZSI6Imdlb3JnZSIsImxldmVsIjoidXNlckxldmVsIn0.AIFPa7PQ5ExHyaKQiXZECd20xIuAwIUhTtdU6Ey6beo
+
+{
+  "contentType": "post",
+  "reaction": "like",
+  "postId": 0
+}
+
+### on a comment
+POST http://localhost:2500/mobile-app/create/reaction
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTU3NjgzODgsImlhdCI6MTcxNTc2MjM4OCwic3ViIjoibW9iaWxlQWNjZXNzIiwidXNlcklkIjoyLCJ1c2VybmFtZSI6Imdlb3JnZSIsImxldmVsIjoidXNlckxldmVsIn0.AIFPa7PQ5ExHyaKQiXZECd20xIuAwIUhTtdU6Ey6beo
+
+{
+  "contentType": "comment",
+  "reaction": "dislike",
+  "postId": 1
+}

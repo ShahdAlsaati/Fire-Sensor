@@ -1,0 +1,3 @@
+GET http://localhost:2500/mobile-app/read/fires?blong=22.22&blat=33.33&tlong=33.33&tlat=44.44
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTU3Njk2MjIsImlhdCI6MTcxNTc2MzYyMiwic3ViIjoibW9iaWxlQWNjZXNzIiwidXNlcklkIjoyLCJ1c2VybmFtZSI6Imdlb3JnZSIsImxldmVsIjoidXNlckxldmVsIn0.GVmPilbKBtCZlRdA7XuP1uI2pIPOqLLEHkiulKX-s20
